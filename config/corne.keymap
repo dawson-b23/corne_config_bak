@@ -103,10 +103,10 @@
 
             display-name = "Base";
             bindings = <
-  &kht EXCLAMATION Q  &kht AT_SIGN W   &kht RA(E) E  &kp R              &kp T             &kp Y          &kht RA(U) U       &kht RA(I) I     &kht RA(O) O        &kp SEMICOLON
-  &kht RA(A) A        &kht LEFT_ALT S  &kht LCTRL D  &kht LEFT_SHIFT F  &lt 3 G           &kht MINUS H   &kht LEFT_SHIFT J  &kht LCTRL K     &kht LEFT_ALT L     &kht PLUS P
-  &kp Z               &kht LC(X) X     &kht LC(C) C  &kht LC(V) V       &kht LC(B) B      &kht RA(N) N   &kht SQT M         &kht HASH COMMA  &kht RA(SLASH) DOT  &kht QUESTION SLASH
-                                       &lt 1 DEL     &kp SPACE          &kp LEFT_SHIFT    &kp BACKSPACE  &kp RET            &lt 2 TAB
+  &kp Q  &kp W  &kp E      &kp R      &kp T             &kp Y          &kp U  &kp I      &kp O       &kp P
+  &kp A  &kp S  &kp D      &kp F      &kp G             &kp H          &kp J  &kp K      &kp L       &kht COLON SEMI
+  &kp Z  &kp X  &kp C      &kp V      &kp B             &kp N          &kp M  &kp COMMA  &kp PERIOD  &kht QUESTION SLASH
+                &lt 1 DEL  &kp SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &sl 1  &lt 2 TAB
             >;
         };
 
