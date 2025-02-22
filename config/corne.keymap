@@ -29,29 +29,6 @@
         };
     };
 
-    macros {
-        par_macro: par_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
-            label = "PAR_MACRO";
-        };
-
-        bra_macro: bra_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
-            label = "BRA_MACRO";
-        };
-
-        cur_macro: cur_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
-            label = "CUR_MACRO";
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -68,26 +45,6 @@
         combo_win {
             bindings = <&kp LEFT_WIN>;
             key-positions = <16 17>;
-        };
-
-        combo_del {
-            bindings = <&kp DELETE>;
-            key-positions = <32 33>;
-        };
-
-        combo_caps {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <13 16>;
-        };
-
-        combo_prtsc {
-            bindings = <&kp PSCRN>;
-            key-positions = <20 9>;
-        };
-
-        combo_ralt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <31 34>;
         };
     };
 
@@ -155,10 +112,10 @@
         gaming {
             display-name = "Gaming";
             bindings = <
-  &kp Q  &kp W  &kp E   &kp R   &kp T      &kp Y   &kp U   &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D   &kp F   &kp G      &kp H   &kp J   &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C   &kp V   &kp TAB    &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                &trans  &trans  &trans     &trans  &trans  &to 0
+  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp T      &kp Y   &kp U   &kp I      &kp O    &kp P
+  &kp LEFT_SHIFT    &kp S         &kp W         &kp F         &kp G      &kp H   &kp J   &kp K      &kp L    &kp SEMI
+  &kp LEFT_CONTROL  &kp A         &kp S         &kp D         &kp TAB    &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                                  &trans        &trans        &trans     &trans  &trans  &to 0
             >;
         };
 
